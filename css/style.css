@@ -89,7 +89,7 @@ canvas {
 @media screen and (max-width: 600px) {
     body {
         background-color: firebrick;
-        height: 100vh;
+        height: 115vh;
     }
     .resume-btn {
         margin-top: 20px;
