@@ -9,10 +9,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     </head>
     <canvas></canvas>
-    <body>
-        <div class="menu-icon">
+    <body class="home">
+        <div onclick="openMenu(body)" class="menu-icon">
             <i class="fas fa-bars"></i>
         </div>
+        <section id="menu">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="#">PORTFOLIO</a>
+            </nav>
+        </section>
         <main class="about">
             <div class="heading">
                 <h1>HI, MY NAME IS TOMAS</h1>
@@ -21,8 +27,8 @@
                 <p>I'm a software developer currently<span> based in Vilnius, Lithuania.</span></p>
             </div>
             <section class="butt-section">
-                <div class="portfolio-btn">PORTFOLIO</div>
-                <div class="resume-btn">RESUME</div>
+                <a href="#" class="portfolio-btn">PORTFOLIO</a>
+                <a href="#" class="resume-btn">RESUME</a>
             </section>
             <section class="icon-section">
                 <a href="https://www.linkedin.com/in/tomas-klimaitis-595682134/" target="_blank">
@@ -36,8 +42,7 @@
                 </a>
             </section>
         </main>
-                    
-        <!-- <footer></footer> -->
     <script src="js/animation.js"></script>
+    <script src="js/index.js"></script>
     </body>
 </html>

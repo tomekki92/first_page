@@ -15,13 +15,11 @@ main, nav {
     color: gray;
     top: 0;
     right: 0;
-    padding: 2rem;
+    padding: 2.5rem;
     font-size: 3rem;
     cursor: pointer;
+    z-index: 11;
 }
-/* .fa-bars {
-
-} */
 .about {
     position: absolute;
     top: 50%;
@@ -51,6 +49,7 @@ main, nav {
 .portfolio-btn {
     background: gray;
     margin-left: 0.5rem;
+    text-decoration: none;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -62,6 +61,7 @@ main, nav {
 }
 .resume-btn {
     border: 4px solid gray;
+    text-decoration: none;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     margin-left: 4rem;
@@ -73,7 +73,7 @@ main, nav {
     letter-spacing: 4px;
     color: gray;
 }
-a {
+.icon-section a {
     color: gray;
     text-decoration: none;
     font-size: 2.5rem;
@@ -123,7 +123,38 @@ canvas {
   width: 100%;
   height: 100vh;
 }
-
+#menu {
+    position: fixed;
+    background-color: #282828;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translate3d(0, -100%, 0);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+#menu nav a {
+    text-decoration: none;
+    display: block;
+    color: #A8A8A8;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1.5rem;
+    background-color: #282828;
+}
+.menu-active #menu {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translate3d(0, 0, 0);
+}
+.menu-active .menu-icon .fas {
+    color: #A8A8A8;
+}
 @media screen and (max-width: 600px) {
     body {
     width: 100%;
@@ -135,9 +166,6 @@ canvas {
     .about {
         top: 45%;
     }
-    /* .resume-btn {
-        margin-top: 20px;
-    } */
     .butt-section {
         display: none;
     }
