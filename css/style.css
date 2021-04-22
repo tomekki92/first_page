@@ -86,22 +86,19 @@ a {
     transform: translate(-50%, -50%);
 }
 .menu-icon, .resume-btn, .portfolio-btn, a {
+    transition: opacity 0.15s;  
     opacity: 70%;
 }
 .resume-btn:hover {
-    transition: opacity 0.3s;  
     opacity: 1;
 }
 .portfolio-btn:hover {
-    transition: opacity 0.3s;  
     opacity: 1;  
 }
 .menu-icon:hover {
-    transition: opacity 0.3s;  
     opacity: 1; 
 }
-a:hover {
-    transition: opacity 0.3s;  
+a:hover {  
     opacity: 1; 
 }
 body {
@@ -156,5 +153,8 @@ canvas {
     span {
         display: block;
         margin-top: 2%;
+    }
+    .menu-icon {
+        font-size: 2.5rem;
     }
 }
