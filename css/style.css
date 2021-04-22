@@ -147,18 +147,18 @@ canvas {
         text-align: center;
     }
     .icon-section {
-    position: relative;
-    width: 100%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        position: relative;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     a {
-    display: inline-block;
-    color: gray;
-    text-decoration: none;
-    font-size: 2.5rem;
-    padding: 0 10px;
+        display: inline-block;
+        color: gray;
+        text-decoration: none;
+        font-size: 2.5rem;
+        padding: 0 10px;
     }
     span {
         display: block;
@@ -166,5 +166,23 @@ canvas {
     }
     .menu-icon {
         font-size: 2.5rem;
+    }
+    .resume-btn:hover {
+        opacity: 1;
+        transform: unset;
+    }
+    .portfolio-btn:hover {
+        opacity: 1;  
+        transform: unset;
+    }
+    .menu-icon:hover {
+        opacity: 1; 
+        transform: unset;
+    }
+    .fab:hover {
+        transform: unset; 
+    }
+    .far:hover {
+        transform: unset; 
     }
 }
