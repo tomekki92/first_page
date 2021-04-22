@@ -85,21 +85,31 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.menu-icon, .resume-btn, .portfolio-btn, a {
+.menu-icon, .resume-btn, .portfolio-btn, a, .fab, .far {
     transition: opacity 0.15s;  
     opacity: 70%;
+    transition: transform .2s;
 }
 .resume-btn:hover {
     opacity: 1;
+    transform: scale(1.15);
 }
 .portfolio-btn:hover {
     opacity: 1;  
+    transform: scale(1.15);
 }
 .menu-icon:hover {
     opacity: 1; 
+    transform: scale(1.15);
 }
 a:hover {  
-    opacity: 1; 
+    opacity: 1;
+}
+.fab:hover {
+    transform: scale(1.2); 
+}
+.far:hover {
+    transform: scale(1.2); 
 }
 body {
   width: 100%;
