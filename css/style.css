@@ -10,6 +10,18 @@ body, html {
 main, nav {
     display: block;
 }
+.menu-icon {
+    position: fixed;
+    color: gray;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+/* .fa-bars {
+
+} */
 .about {
     position: absolute;
     top: 50%;
@@ -72,6 +84,25 @@ a {
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.menu-icon, .resume-btn, .portfolio-btn, a {
+    opacity: 70%;
+}
+.resume-btn:hover {
+    transition: opacity 0.3s;  
+    opacity: 1;
+}
+.portfolio-btn:hover {
+    transition: opacity 0.3s;  
+    opacity: 1;  
+}
+.menu-icon:hover {
+    transition: opacity 0.3s;  
+    opacity: 1; 
+}
+a:hover {
+    transition: opacity 0.3s;  
+    opacity: 1; 
 }
 body {
   width: 100%;
